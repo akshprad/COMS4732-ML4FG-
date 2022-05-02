@@ -1,0 +1,17 @@
+README.md
+setup.py
+COSSMO.egg-info/PKG-INFO
+COSSMO.egg-info/SOURCES.txt
+COSSMO.egg-info/dependency_links.txt
+COSSMO.egg-info/requires.txt
+COSSMO.egg-info/top_level.txt
+bin/train_cossmo.py
+cossmo/__init__.py
+cossmo/constants.py
+cossmo/data_pipeline.py
+cossmo/dna_encoder.py
+cossmo/evaluation.py
+cossmo/model.py
+cossmo/output_networks.py
+cossmo/scoring_network.py
+cossmo/validation_monitor.py
