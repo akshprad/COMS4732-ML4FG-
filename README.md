@@ -100,7 +100,16 @@ in [`configuration_files/`](https://github.com/PSI-Lab/COSSMO/blob/master/config
 Before you can use these configuration files, you must edit them and provide the
 correct file paths for the dataset path and output path for your system.
 
-## Legal
-Use of COSSMO is subject to the [Deep Genomics Academic License](https://github.com/PSI-Lab/COSSMO/blob/master/LICENSE.txt).
+### COSSMO with BERT (https://huggingface.co/docs/transformers/model_doc/bert#transformers.BertModel)
 
-Copyright 2018 Deep Genomics Inc. 
+To run the new COSSMO model.py from Colab notebook, we will need to install Tensorflow 1.13 for the tensorflow.contrib to work.
+
+ pip install tensorflow==1.13.2
+
+The next step would be to load the configuration file and store it in a variable config1, that will be passed as a parameter while calling the model to run.
+
+The model can be called with 
+
+c.main(configuration = config1, continue_from=None, intra_op_threads=2, inter_op_threads=6, test_only=False)
+
+An example ipynb file is attached to this repository with the code for these steps.
